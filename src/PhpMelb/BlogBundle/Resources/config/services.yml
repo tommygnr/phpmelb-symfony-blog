@@ -1,0 +1,6 @@
+services:
+    phpmelb.registration.form.type:
+        class: PhpMelb\BlogBundle\Form\UserType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: phpmelb_blogbundle_user }
