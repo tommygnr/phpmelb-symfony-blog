@@ -33,4 +33,7 @@
     </li>
     <li>{{ form(delete_form) }}</li>
 </ul>
+
+{% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': entity.id } %}
+
 {% endblock %}

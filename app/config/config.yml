@@ -31,7 +31,6 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -73,3 +72,10 @@ fos_user:
     registration:
         form:
             type: phpmelb_blogbundle_user
+
+fos_comment:
+    db_driver: orm
+    class:
+        model:
+            comment: PhpMelb\BlogBundle\Entity\Comment
+            thread: PhpMelb\BlogBundle\Entity\Thread
